@@ -1,0 +1,25 @@
+sing System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace corte_3_agregacion
+{
+    class Ccarro
+    {
+        private string color;
+        private int numpuertas;
+        private int año;
+        public Ccarro(string pcolor, int pnumpuertas, int paño)
+        {
+            color = pcolor;
+            numpuertas = pnumpuertas;
+            año = paño;
+        }
+        public void Muestra()
+        {
+            Console.WriteLine("Carro de color {0} con {1} puertas y de año {2}", color, numpuertas, año);
+        }
+
+
+    }
+}
