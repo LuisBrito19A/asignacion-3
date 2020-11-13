@@ -1,0 +1,17 @@
+using System;
+
+namespace corte_3_composicion
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Cdueño Angel = new Cdueño("Angel");
+            Angel.MostrarPropiedad();
+            Console.WriteLine("--------");
+
+
+
+        }
+    }
+}
