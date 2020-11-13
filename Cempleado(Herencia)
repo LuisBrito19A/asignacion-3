@@ -1,0 +1,34 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace corte_3_herencia
+{
+    class Cempleado : Cpersona
+    {
+        private string puesto;
+        private double sueldo;
+        public string Puesto
+        {
+            get { return puesto; }
+            set { puesto = value; }
+        }
+        public double Sueldo
+        {
+            get { return sueldo; }
+            set { sueldo = value; }
+        }
+        public void datos(string cnombre, int cedad, string cpuesto, double csueldo)
+        {
+            Nombre = cnombre;
+            Edad = cedad;
+            puesto = cpuesto;
+            sueldo = csueldo;
+        }
+        public void empleado()
+        {
+            Muestra();
+            Console.WriteLine("Trabajo de {0} con sueldo de {1}bs", puesto, sueldo);
+        }
+    }
+}
