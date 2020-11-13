@@ -1,0 +1,38 @@
+using System;
+using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+
+namespace corte_3_agregacion
+{
+    class Cdueño
+    {
+        string nombre;
+        private Ccarro propiedad = null;
+        public Cdueño(string pnombre)
+        {
+            nombre = pnombre;
+        }
+        public void MostrarPropiedad()
+        {
+            if (propiedad != null)
+            {
+                Console.Write("{0} tiene un ", nombre);
+                propiedad.Muestra();
+
+            }
+            else
+            {
+                Console.WriteLine("{0} aun no tiene carro", nombre);
+            }
+            
+        }
+          public void AdicionaPropiedad(Ccarro pcarro)
+          {
+             if (pcarro != null)
+             {
+                propiedad = pcarro;
+             }
+          }
+    }
+}
