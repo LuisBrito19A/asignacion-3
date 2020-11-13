@@ -1,0 +1,29 @@
+CREATE TABLE Info (
+  info_id INT PRIMARY KEY,
+  Nombre VARCHAR(40),
+  apellido VARCHAR(40),
+  fecha_de_nacimiento DATE,
+  genero VARCHAR(1),
+);
+
+CREATE TABLE Titulos (
+  estudio_id INT PRIMARY KEY,
+  Estudioa VARCHAR(40),
+  Estudiob VARCHAR(40),
+  Estudioc VARCHAR(40),
+);
+
+CREATE TABLE Trabajos (
+  trabajo_id INT PRIMARY KEY,
+  trabajoa VARCHAR(40),
+
+);
+
+-- -----------------------------------------------------------------------------
+
+-- Corporate
+INSERT INTO Info VALUES(100, 'Angel', 'Arias', '06-05-2002', 'M');
+
+INSERT INTO Titulos VALUES(1, 'Bachiller','Certificado de programacion' , 'Ingles');
+
+INSERT INTO Trabajos VALUES(5, 'Ninguno hasta la fecha');
