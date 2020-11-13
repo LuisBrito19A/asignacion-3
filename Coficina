@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace corte_3_composicion
+{
+    class Coficina
+    {
+        private string direccion;
+        private int habitaciones;
+        public Coficina(string cdireccion, int chabitaciones)
+        {
+            direccion = cdireccion;
+            habitaciones = chabitaciones;
+        }
+        public void Muestra()
+        {
+            Console.WriteLine("Oficina en {0} con {1} escritorios", direccion, habitaciones);
+        }
+    }
+}
