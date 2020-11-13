@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+
+namespace corte_3_composicion
+{
+    class Cdueño
+    {
+        private string nombre;
+        private Coficina propiedad = null;
+        public Cdueño(string cNombre)
+        {
+            nombre = cNombre;
+            propiedad = new Coficina("Av Cuatro avenidas", 3);
+        }
+        public void MostrarPropiedad()
+        {
+            if(propiedad != null)
+            {
+                Console.Write("{0} tiene una ", nombre);
+                propiedad.Muestra();
+            }
+            else
+            {
+                Console.WriteLine("{0} aun no tiene ninguna oficina", nombre);
+            }
+        }
+    }
+}
