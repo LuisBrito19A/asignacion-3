@@ -1,0 +1,26 @@
+using System;
+
+namespace corte_3_herencia
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Cpersona uno = new Cpersona();
+            uno.Nombre = "Jose";
+            uno.Edad = 30;
+            uno.Muestra();
+            Console.WriteLine("-----------------");
+            Cempleado dos = new Cempleado();
+            dos.Nombre = "David";
+            dos.Edad = 20;
+            dos.Puesto = "Ingeniero";
+            dos.Sueldo = 1000000;
+            dos.empleado();
+            Console.WriteLine("-----------------");
+            Cempleado tres = new Cempleado();
+            tres.datos("Fernanda", 19, "Dentista", 3000000.90);
+            tres.empleado();
+        }
+    }
+}
