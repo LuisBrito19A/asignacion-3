@@ -1,0 +1,16 @@
+using System;
+
+namespace corte_3_agregacion
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Cdueño Angel = new Cdueño("Angel");
+            Ccarro carro1 = new Ccarro("Rojo", 4, 2008);
+            //Angel.MostrarPropiedad();
+            Angel.AdicionaPropiedad(carro1);
+            Angel.MostrarPropiedad();
+        }
+    }
+}
