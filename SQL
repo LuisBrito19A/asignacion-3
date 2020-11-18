@@ -1,3 +1,9 @@
+CREATE DATABASE Sistemas
+go
+
+USE Sistemas
+go
+
 CREATE TABLE Info (
   info_id INT PRIMARY KEY,
   Nombre VARCHAR(40),
@@ -5,6 +11,8 @@ CREATE TABLE Info (
   fecha_de_nacimiento DATE,
   genero VARCHAR(1),
 );
+go
+
 
 CREATE TABLE Titulos (
   estudio_id INT PRIMARY KEY,
@@ -12,18 +20,29 @@ CREATE TABLE Titulos (
   Estudiob VARCHAR(40),
   Estudioc VARCHAR(40),
 );
+go
+
 
 CREATE TABLE Trabajos (
   trabajo_id INT PRIMARY KEY,
   trabajoa VARCHAR(40),
 
 );
+go
 
--- -----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 -- Corporate
+go
+
 INSERT INTO Info VALUES(100, 'Angel', 'Arias', '06-05-2002', 'M');
+
+go
 
 INSERT INTO Titulos VALUES(1, 'Bachiller','Certificado de programacion' , 'Ingles');
 
+go
+
 INSERT INTO Trabajos VALUES(5, 'Ninguno hasta la fecha');
+go
+
